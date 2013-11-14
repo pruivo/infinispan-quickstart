@@ -56,8 +56,8 @@
       <!-- Versions -->
       <version.jboss.javaee.web>2.0.0.Final</version.jboss.javaee.web>
       <version.arquillian>1.0.0.CR5</version.arquillian>
-      <version.javax.cache.api>0.4</version.javax.cache.api>
-      <version.infinispan>5.1.0.CR2</version.infinispan>
+      <version.javax.cache.api>0.8</version.javax.cache.api>
+      <version.infinispan>6.0.0.CR1</version.infinispan>
       <version.junit>4.8.2</version.junit>
    </properties>
 
@@ -118,6 +118,11 @@
          <artifactId>infinispan-cdi</artifactId>
          <version>${version.infinispan}</version>
       </dependency>
+       <dependency>
+           <groupId>org.infinispan</groupId>
+           <artifactId>infinispan-jcache</artifactId>
+           <version>${version.infinispan}</version>
+       </dependency>
 
       <!-- Test dependencies -->
       <dependency>
